@@ -1,1 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OmniSense Bengaluru Priority Grid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="eyebrow">Bengaluru command subsystem</div>
+        <h1 class="sidebar-title">Control Rail</h1>
+        <p class="sidebar-copy">
+          Run a Bengaluru emergency corridor, clear real junction chains, and track live dispatch movement with full tactical presence.
+        </p>
 
+        <div class="control-group">
+          <button id="toggleButton" class="control-button control-button-primary">Initiate system</button>
+        </div>
+
+        <div class="control-section">
+          <div class="section-kicker">Inject scenario</div>
+          <button class="control-button" data-action="inject" data-vehicle="Ambulance">Deploy ambulance</button>
+          <button class="control-button" data-action="inject" data-vehicle="Firetruck">Deploy firetruck</button>
+        </div>
+
+        <div class="control-section">
+          <div class="section-kicker">Recovery</div>
+          <button id="resetButton" class="control-button">Soft reset node</button>
+        </div>
+
+        <div class="control-section mission-brief">
+          <div class="section-kicker">Mission brief</div>
+          <div class="brief-card">
+            <div class="brief-label">Priority channel</div>
+            <div id="briefMode" class="brief-value">Standby corridor watch</div>
+            <div id="briefCopy" class="brief-copy">Waiting for authenticated dispatch and multi-sensor confirmation.</div>
+          </div>
+        </div>
+
+        <div class="sidebar-footer">
+          <div class="footer-label">Network status</div>
+          <div id="networkBadge" class="network-badge">
+            <span class="network-dot"></span>
+            <span>All modules online</span>
+          </div>
+          <div class="footer-label footer-label-gap">Mission log</div>
+          <div id="missionLog" class="mission-log"></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="hero-grid">
+        <div class="hero-panel">
+          <div class="eyebrow">Bengaluru urban mobility command</div>
+          <div class="hero-wordmark">OMNISENSE</div>
+          <p class="hero-copy">
+            Orchestrate emergency priority across Bengaluru choke points with live sensor fusion, aggressive junction control, and corridor-wide signal override.
+          </p>
+          <div class="hero-pills">
+            <div class="hero-pill"><span class="pill-dot"></span><span id="modePill">Monitoring all lanes</span></div>
+            <div class="hero-pill"><span id="dispatchPill">Dispatch: none</span></div>
+            <div class="hero-pill"><span id="sectorPill">Corridor: South Bengaluru</span></div>
+          </div>
+          <div class="hero-dock">
+            <div class="hero-stat">
+              <span class="panel-label">Signal phase</span>
+              <strong id="heroSignalState">Red</strong>
+            </div>
+            <div class="hero-stat">
+              <span class="panel-label">Verification stack</span>
+              <strong id="heroVerification">2 of 3 live</strong>
+            </div>
+            <div class="hero-stat">
+              <span class="panel-label">Response lane</span>
+              <strong id="heroLane">Northbound priority</strong>
+            </div>
+          </div>
+        </div>
+        <div class="clock-panel">
+          <div class="panel-label">System clock</div>
+          <div id="clockValue" class="clock-value"></div>
+          <div class="panel-label panel-label-gap">Priority window</div>
+          <div id="windowValue" class="window-value">30s</div>
+        </div>
+      </section>
+
+      <section id="metricBand" class="metric-band"></section>
+
+      <section class="workspace-grid">
+        <div class="workspace-column">
+          <div class="section-head">
+            <h2>Intersection override</h2>
+            <span>Signal priority state</span>
+          </div>
+          <div class="panel">
+            <div id="statusBanner" class="status-banner">
+              <div>
+                <div id="statusTitle" class="status-title"></div>
+                <div id="statusCaption" class="status-caption"></div>
+              </div>
+              <div class="status-chip">
+                <span class="panel-label">Window</span>
+                <strong id="statusWindow"></strong>
+              </div>
+            </div>
+            <div id="signalStack" class="signal-stack"></div>
+          </div>
+
+          <div class="section-head section-gap">
+            <h2>Sensor telemetry</h2>
+            <span>Cross-model verification</span>
+          </div>
+          <div class="panel">
+            <div id="sensorGrid" class="sensor-grid"></div>
+          </div>
+        </div>
+
+        <div class="workspace-column workspace-column-wide">
+          <div class="section-head">
+            <h2>Tactical pathing grid</h2>
+            <span>Priority route and active junction</span>
+          </div>
+          <div class="panel panel-map">
+            <div class="map-stage">
+              <div id="map" class="map-shell"></div>
+              <div class="map-hud">
+                <div class="map-hud-card">
+                  <div class="panel-label">Active junction</div>
+                  <div id="mapHudJunction" class="map-hud-value">J-01</div>
+                </div>
+                <div class="map-hud-card">
+                  <div class="panel-label">Route length</div>
+                  <div id="mapHudRoute" class="map-hud-value">4 nodes</div>
+                </div>
+                <div class="map-hud-card">
+                  <div class="panel-label">Override mode</div>
+                  <div id="mapHudMode" class="map-hud-value">Monitor</div>
+                </div>
+              </div>
+            </div>
+            <div id="routeStrip" class="route-strip"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <div class="workspace-column">
+          <div class="section-head">
+            <h2>Confidence interval log</h2>
+            <span>Model certainty and event history</span>
+          </div>
+          <div class="panel">
+            <div class="gauge-grid">
+              <div class="gauge-card">
+                <div class="panel-label">Acoustic</div>
+                <div class="gauge-ring"><div id="acousticGauge" class="gauge-fill"></div><div id="acousticValue" class="gauge-value"></div></div>
+              </div>
+              <div class="gauge-card">
+                <div class="panel-label">Vision</div>
+                <div class="gauge-ring"><div id="visionGauge" class="gauge-fill gauge-fill-green"></div><div id="visionValue" class="gauge-value"></div></div>
+              </div>
+            </div>
+            <div class="history-head">
+              <div class="panel-label">Preemption telemetry</div>
+              <div class="history-caption">Last 20 signal events</div>
+            </div>
+            <div id="historyBars" class="history-bars"></div>
+          </div>
+        </div>
+
+        <div class="workspace-column">
+          <div class="section-head">
+            <h2>Optical sensor feed</h2>
+            <span>Visual lane confirmation</span>
+          </div>
+          <div class="panel">
+            <div class="camera-bar">
+              <button id="cameraToggle" class="control-button control-button-ghost" type="button">Start laptop camera</button>
+              <div id="cameraStatus" class="camera-status">Camera offline</div>
+            </div>
+            <div class="camera-privacy">
+              Browser permission required. Video stays in the page and is analyzed live on-device.
+            </div>
+            <div class="camera-bar camera-bar-secondary">
+              <button id="micToggle" class="control-button control-button-ghost" type="button">Start microphone</button>
+              <div id="micStatus" class="camera-status">Mic offline</div>
+            </div>
+            <div id="feedShell" class="feed-shell">
+              <div class="feed-scanline"></div>
+              <div class="feed-tag">Live feed</div>
+              <video id="cameraVideo" autoplay playsinline muted></video>
+              <canvas id="cameraOverlay"></canvas>
+              <img id="feedImage" alt="Vehicle feed">
+              <div id="feedEmpty" class="feed-empty">
+                <div class="feed-empty-title">Camera ready</div>
+                <div class="feed-empty-copy">Start the laptop camera to run live roadside detection in the browser.</div>
+              </div>
+            </div>
+            <div id="targetCard" class="target-card"></div>
+            <div id="audioBlock" class="audio-block hidden">
+              <div class="panel-label">Acoustic feedback</div>
+              <audio id="audioPlayer" controls preload="none"></audio>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    window.__INITIAL_STATE__ = {{ initial_state|tojson }};
+  </script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
