@@ -1,0 +1,40 @@
+{
+  "locations": [
+    { "id": "dispatch_hq", "name": "Dispatch HQ", "coords": [12.9177, 77.6238] },
+    { "id": "silk_board", "name": "Silk Board Junction", "coords": [12.9177, 77.6238] },
+    { "id": "madiwala", "name": "Madiwala Check Post", "coords": [12.9266, 77.6204] },
+    { "id": "adugodi", "name": "Adugodi Signal", "coords": [12.9416, 77.6145] },
+    { "id": "shantinagar", "name": "Shantinagar Junction", "coords": [12.9567, 77.5937] },
+    { "id": "richmond", "name": "Richmond Circle", "coords": [12.9666, 77.5997] },
+    { "id": "st_johns", "name": "St. John's Medical Hub", "coords": [12.9343, 77.6191] },
+    { "id": "jayadeva", "name": "Jayadeva Hospital", "coords": [12.9166, 77.5995] },
+    { "id": "electronic_city", "name": "Electronic City Trauma Center", "coords": [12.8456, 77.6603] },
+    { "id": "mg_road", "name": "MG Road Response Point", "coords": [12.9756, 77.605] }
+  ],
+  "graph": {
+    "dispatch_hq": { "silk_board": 0.8, "madiwala": 1.5 },
+    "silk_board": { "dispatch_hq": 0.8, "madiwala": 1.2, "jayadeva": 3.3 },
+    "madiwala": { "dispatch_hq": 1.5, "silk_board": 1.2, "adugodi": 2.1, "st_johns": 1.0 },
+    "adugodi": { "madiwala": 2.1, "shantinagar": 3.2 },
+    "shantinagar": { "adugodi": 3.2, "richmond": 1.8, "mg_road": 2.4 },
+    "richmond": { "shantinagar": 1.8, "mg_road": 1.2 },
+    "st_johns": { "madiwala": 1.0 },
+    "jayadeva": { "silk_board": 3.3 },
+    "mg_road": { "shantinagar": 2.4, "richmond": 1.2 },
+    "electronic_city": {}
+  },
+  "maxPickups": 3,
+  "trafficProfiles": {
+    "normal": 1.0,
+    "moderate": 1.2,
+    "heavy": 1.45,
+    "gridlock": 1.8
+  },
+  "trafficHotspots": {
+    "silk_board:madiwala": 1.18,
+    "madiwala:adugodi": 1.24,
+    "adugodi:shantinagar": 1.15,
+    "shantinagar:richmond": 1.12,
+    "shantinagar:mg_road": 1.22
+  }
+}
