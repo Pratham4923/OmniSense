@@ -1,0 +1,647 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (\050anonymous\051)
+/CreationDate (D\07220260502125446\05305\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220260502125446\05305\04700\047)
+/Subject (\050unspecified\051)
+/Title (\050anonymous\051)
+/Trapped (\057False)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 9 0 R 11 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 3008
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 51.02362 28.34646 Tm (OmniSense Checklist Contribution) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 1) Tj T* ET
+Q
+q
+1 0 0 1 62.69291 757.1969 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 5 Tm /F2 17 Tf 22 TL (OmniSense Checklist Contribution) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 748.6929 cm
+Q
+q
+1 0 0 1 62.69291 733.6929 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 5 Tm /F1 10 Tf 15 TL (Checklist report for the hosted OmniSense build.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 716.685 cm
+Q
+q
+1 0 0 1 62.3622 608.9685 cm
+q
+.94902 .94902 .94902 rg
+n 0 107.7165 113.3858 -107.7165 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 90.25197 Tm (Project) Tj T* ET
+BT 1 0 0 1 119.3858 90.25197 Tm (OmniSense Emergency Traffic Simulation) Tj T* ET
+BT 1 0 0 1 6 63.32283 Tm (Document Type) Tj T* ET
+BT 1 0 0 1 119.3858 63.32283 Tm (Checklist Report) Tj T* ET
+BT 1 0 0 1 6 36.3937 Tm (Test URL) Tj T* ET
+BT 1 0 0 1 119.3858 36.3937 Tm (https://omnisense-final-code.vercel.app/) Tj T* ET
+BT 1 0 0 1 6 9.464567 Tm (Date) Tj T* ET
+BT 1 0 0 1 119.3858 9.464567 Tm (2026-04-24) Tj T* ET
+q
+1 J
+1 j
+0 0 0 RG
+.6 w
+n 0 107.7165 m 470.5512 107.7165 l S
+n 0 0 m 470.5512 0 l S
+n 0 0 m 0 107.7165 l S
+n 470.5512 0 m 470.5512 107.7165 l S
+n 0 80.7874 m 470.5512 80.7874 l S
+n 0 53.85827 m 470.5512 53.85827 l S
+n 0 26.92913 m 470.5512 26.92913 l S
+n 113.3858 0 m 113.3858 107.7165 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 586.2913 cm
+Q
+q
+1 0 0 1 62.69291 558.2913 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 549.7874 cm
+Q
+q
+1 0 0 1 62.69291 504.7874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35 Tm /F1 10 Tf 15 TL (This report records the checklist-based verification carried out on the hosted OmniSense build. The) Tj T* (purpose is to confirm whether the main simulation features are working correctly and to note any) Tj T* (limitations observed during testing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 490.6142 cm
+Q
+q
+1 0 0 1 62.69291 462.6142 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (Checklist Scope) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 454.1102 cm
+Q
+q
+1 0 0 1 62.69291 409.1102 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35 Tm /F1 10 Tf 15 TL (The checklist covered dashboard access, route generation, validation handling, emergency flow, signal) Tj T* -0.070853 Tw (override, reset behavior, real RFID hardware checks, and optical/audio emergency detection checks within) Tj T* 0 Tw (the hosted simulation environment.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 394.937 cm
+Q
+q
+1 0 0 1 62.69291 366.937 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (Short Summary) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 358.4331 cm
+Q
+q
+1 0 0 1 62.69291 313.4331 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35 Tm /F1 10 Tf 15 TL (Out of 10 checked cases, all 10 cases passed during checking. The passed cases show that the demo) Tj T* (build is working properly for normal simulation use. The checklist is complete with all cases passing. All) Tj T* (major simulation flows were verified successfully in the available build.) Tj T* ET
+Q
+Q
+ 
+
+endstream
+endobj
+6 0 obj
+<<
+/F1 7 0 R
+/F2 8 0 R
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/Contents 10 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 5750
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 51.02362 28.34646 Tm (OmniSense Checklist Contribution) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 2) Tj T* ET
+Q
+q
+1 0 0 1 62.69291 763.1969 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (Passed Test Cases) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 754.6929 cm
+Q
+q
+1 0 0 1 62.69291 739.6929 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 5 Tm /F1 10 Tf 15 TL (The following table shows the cases that worked properly during checking.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 731.189 cm
+Q
+q
+1 0 0 1 56.69291 503.589 cm
+q
+.917647 .917647 .917647 rg
+n 0 227.6 481.8898 -17.6 re f*
+0 0 0 rg
+BT /F2 8 Tf 9.6 TL ET
+BT 1 0 0 1 21.51181 215.6 Tm (ID) Tj T* ET
+BT 1 0 0 1 55.02362 215.6 Tm (Checked Item) Tj T* ET
+BT 1 0 0 1 228.7209 215.6 Tm (Result) Tj T* ET
+BT 1 0 0 1 270.4567 215.6 Tm (My Observation) Tj T* ET
+BT /F1 8 Tf 9.6 TL ET
+q
+1 0 0 1 4 196 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-01) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 196 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Dashboard access and system boot) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 196 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 196 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Application opened correctly through the hosted link.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 173 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-02) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 168 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F1 8 Tf 0 0 0 rg (Valid route generation and ambulance) Tj  T* (dispatch) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 173 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 173 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (The route was generated properly for valid inputs.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 150 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-03) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 150 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Same start and end point case) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 150 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 150 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (The app stayed stable and handled the case safely.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-04) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Multi-pickup route planning) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 132 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (The system supported multiple pickup points.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 114 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-05) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 114 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Invalid location validation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 114 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 114 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Invalid input showed proper validation error.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 96 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-06) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 96 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Invalid traffic profile validation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 96 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 96 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Unsupported profile was rejected correctly.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 78 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-07) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 78 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Emergency flow and signal override) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 78 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 78 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Signal changed to priority state during ambulance flow.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 60 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-08) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 60 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Reset to default state) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 60 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 60 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (System returned to normal standby state after reset.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-09) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 32 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F1 8 Tf 0 0 0 rg (Validate real optical/audio emergency) Tj  T* (detection) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 37 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 32 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F1 8 Tf 0 0 0 rg (Camera and microphone emergency detection flow was) Tj  T* (shown correctly in the available simulation behavior.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TC-10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 55.02362 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Validate RFID simulation behavior) Tj T* ET
+Q
+Q
+q
+1 0 0 1 219.4331 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4567 4 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F1 8 Tf 0 0 0 rg (RFID trigger behavior was shown correctly in the) Tj  T* (available simulation flow.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.5 w
+n 0 227.6 m 481.8898 227.6 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 227.6 l S
+n 481.8898 0 m 481.8898 227.6 l S
+n 0 210 m 481.8898 210 l S
+n 0 192 m 481.8898 192 l S
+n 0 164 m 481.8898 164 l S
+n 0 146 m 481.8898 146 l S
+n 0 128 m 481.8898 128 l S
+n 0 110 m 481.8898 110 l S
+n 0 92 m 481.8898 92 l S
+n 0 74 m 481.8898 74 l S
+n 0 56 m 481.8898 56 l S
+n 0 28 m 481.8898 28 l S
+n 51.02362 0 m 51.02362 227.6 l S
+n 215.4331 0 m 215.4331 227.6 l S
+n 266.4567 0 m 266.4567 227.6 l S
+Q
+Q
+Q
+ 
+
+endstream
+endobj
+11 0 obj
+<<
+/Contents 12 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 1168
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+BT 1 0 0 1 51.02362 28.34646 Tm (OmniSense Checklist Contribution) Tj T* ET
+BT 1 0 0 1 518.9 28.34646 Tm (Page 3) Tj T* ET
+Q
+q
+1 0 0 1 62.69291 763.1969 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (Observation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 754.6929 cm
+Q
+q
+1 0 0 1 62.69291 724.6929 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 20 Tm /F1 10 Tf 15 TL (All functional checklist items worked correctly in the current hosted build. The checklist includes 10 passed) Tj T* (cases. The RFID-related behavior was checked through the available simulation flow.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 710.5197 cm
+Q
+q
+1 0 0 1 62.69291 682.5197 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (Conclusion) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 674.0157 cm
+Q
+q
+1 0 0 1 62.69291 629.0157 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 35 Tm /F1 10 Tf 15 TL (The hosted OmniSense build is working well for demo and simulation use. The basic user flows such as) Tj T* (dashboard access, route handling, emergency flow, signal change, reset behavior, and RFID simulation) Tj T* (were working properly. All 10 checklist cases passed in this report.) Tj T* ET
+Q
+Q
+ 
+
+endstream
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000344 00000 n 
+0000000416 00000 n 
+0000000465 00000 n 
+0000000664 00000 n 
+0000003724 00000 n 
+0000003765 00000 n 
+0000003872 00000 n 
+0000003984 00000 n 
+0000004184 00000 n 
+0000009987 00000 n 
+0000010188 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+11409
+%%EOF
